@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 @layer components {
-    h1{
-        @apply text-center;
+    html {
+        @apply font-sans min-h-full;
+    }
+
+    body {
+        @apply min-h-full;
+    }
+
+    h1 {
+        @apply text-center text-6xl;
     }
 }
