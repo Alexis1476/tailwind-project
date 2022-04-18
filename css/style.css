@@ -4,14 +4,10 @@
 
 @layer components {
     html {
-        @apply font-sans min-h-full;
+        @apply font-sans min-h-full h-full;
     }
 
     body {
-        @apply min-h-full;
-    }
-
-    h1 {
-        @apply text-center text-6xl;
+        @apply min-h-full h-full;
     }
 }
