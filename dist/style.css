@@ -766,6 +766,10 @@ body{
   height: fit-content;
 }
 
+.max-h-full{
+  max-height: 100%;
+}
+
 .w-full{
   width: 100%;
 }
@@ -838,12 +842,20 @@ body{
   width: 0.75rem;
 }
 
+.min-w-full{
+  min-width: 100%;
+}
+
 .max-w-7xl{
   max-width: 80rem;
 }
 
 .max-w-xs{
   max-width: 20rem;
+}
+
+.max-w-full{
+  max-width: 100%;
 }
 
 .flex-1{
@@ -980,6 +992,10 @@ body{
   overflow: scroll;
 }
 
+.overflow-x-auto{
+  overflow-x: auto;
+}
+
 .overflow-y-auto{
   overflow-y: auto;
 }
@@ -1091,6 +1107,11 @@ body{
 .bg-gray-600{
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.bg-blue-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-5{
