@@ -122,6 +122,7 @@
         </div>
     </section>
     <section class="bg-[#ECF2FD] h-full w-full p-7 space-y-8">
+        <!--Header-->
         <div class="w-full flex justify-between items-center">
             <!--Nav-->
             <nav>
@@ -132,7 +133,7 @@
             </nav>
             <!--Login-->
             <div class="flex space-x-6 items-center">
-                <img class="h-16 rounded-xl" src="../img/avatar.png" alt="">
+                <img class="h-16 rounded-xl" src="../img/avatar.png" alt="Avatar">
                 <div class="flex flex-col">
                     <!--Username-->
                     <span class="text-xl font-bold">MagnetoAl</span>
@@ -147,9 +148,16 @@
                 </a>
             </div>
         </div>
+        <!--Milieu-->
         <div class="bg-white rounded-3xl">
             <!--Header-->
-            <h2 class="p-7 pb-0 text-xl font-bold">Charts: Top 50</h2>
+            <div class="p-7 pb-0 text-xl font-bold flex justify-between">
+                <h2>Charts: Top 50</h2>
+                <div class="text-xl space-x-4">
+                    <button><</button>
+                    <button>></button>
+                </div>
+            </div>
             <!--Songs-->
             <div class="flex p-7 space-x-8">
                 <div class="border border-gray-100 p-5 space-y-2 rounded-xl">
@@ -174,12 +182,32 @@
                 </div>
             </div>
         </div>
-        <div>
-            <section>
-                <!--Liste des chansons-->
+        <!--Footer-->
+        <div class="space-x-8 flex">
+            <!--Liste des chansons-->
+            <section class="bg-white w-3/4 rounded-3xl space-y-8">
+                <!--Header-->
+                <div class="text-xl font-bold flex justify-between p-7 pb-0">
+                    <h2>Listening History</h2>
+                    <button class="text-sm text-[#7C8DB5]">See All</button>
+                </div>
+                <!--Contenu liste de chansons-->
+                <div class="flex p-7 space-y-4 bg-gray-600 bg-opacity-5 rounded-b-3xl">
+                    <div class="relative bg-white w-full p-5">
+                        <div class="pl-36">
+                            <h3 class="font-bold">Al Music Genre</h3>
+                            <h4 class="text-sm text-[#7C8DB5]">Marron 5</h4>
+                        </div>
+                        <img class=" top-0 h-28 rounded-xl shadow-xl" src="../img/avatar.png" alt="Cover">
+                        <div class="absolute">
+                            <!--Elements superposés-->
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section>
+            <section class="bg-white w-1/4 rounded-3xl">
                 <!--Current song-->
+                RIGHT
             </section>
         </div>
     </section>
