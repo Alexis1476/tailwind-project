@@ -154,12 +154,22 @@
             <div class="p-7 pb-0 text-xl font-bold flex justify-between">
                 <h2>Charts: Top 50</h2>
                 <div class="text-xl space-x-4">
-                    <button><</button>
-                    <button>></button>
+                    <button onclick="scrollX(0)"><</button>
+                    <button onclick="scrollX(1)">></button>
+                    <script>
+                        function scrollX(direction) {
+                            let songsList = document.getElementById('songs-list');
+                            if (direction === 1) {
+                                songsList.scrollBy(songsList.offsetWidth, 0);
+                            } else {
+                                songsList.scrollBy(-songsList.offsetWidth, 0);
+                            }
+                        }
+                    </script>
                 </div>
             </div>
             <!--Songs-->
-            <div class="flex p-7 space-x-8 overflow-x-auto max-w-full min-w-full w-10">
+            <div id="songs-list" class="scroll-smooth flex p-7 space-x-8 overflow-hidden max-w-full min-w-full w-10">
                 <div class="border border-gray-100 p-5 space-y-2 rounded-xl">
                     <div class="h-36 w-36 relative">
                         <img class="h-36 w-36 rounded-xl" src="../img/avatar.png" alt="Cover">
