@@ -265,7 +265,7 @@
         <!--En bas-->
         <div class="grow space-x-8 flex">
             <!--Liste des chansons-->
-            <section class="flex flex-col bg-white w-3/4 rounded-3xl space-y-8 h-full">
+            <section class="flex flex-col bg-white w-11/12 rounded-3xl space-y-8 h-full">
                 <!--Header-->
                 <div class="text-xl flex justify-between p-7 pb-0 font-bold">
                     <h2>Listening History</h2>
@@ -509,8 +509,145 @@
                     </div>
                 </div>
             </section>
-            <section class="flex bg-white w-1/4 rounded-3xl h-full ">
+            <section class="flex flex-col bg-white w-1/4 rounded-3xl h-full space-y-4 overflow-hidden p-5">
                 <!--Current song-->
+                <div class="w-full h-1/2 rounded-3xl bg-center bg-cover shadow-xl"
+                     style="background-image: url('../img/avatar.png')"></div>
+                <div class="w-full grow text-center space-y-2">
+                    <!--Song info-->
+                    <div>
+                        <h2 class="text-xl font-bold">Creep</h2>
+                        <h3 class="text-sm text-[#7C8DB5]">Radiohead</h3>
+                    </div>
+                    <div>
+                        <div class="w-full bg-[#FF9A45] bg-opacity-20 rounded-full h-1.5">
+                            <div class="bg-[#FF9A45] h-1.5 rounded-full w-2/4"></div>
+                        </div>
+                        <div class="flex justify-between text-[#7C8DB5] text-xs mt-2">
+                            <span>1:00</span>
+                            <span>2:30</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <!--Control buttons-->
+                        <button>
+                            <!--Back button-->
+                            <svg class="h-5 w-6" viewBox="0 0 10 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1.65448L1 7.68368L9 13.7129V1.65448Z" fill="url(#paint0_linear_73_1212)"
+                                      stroke="url(#paint1_linear_73_1212)" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M1 2.65936V12.708" stroke="url(#paint2_linear_73_1212)" stroke-width="2"
+                                      stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_73_1212" x1="5" y1="-4.37472" x2="16.11"
+                                                    y2="2.99605" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_73_1212" x1="5" y1="-4.37472" x2="16.11"
+                                                    y2="2.99605" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_73_1212" x1="1" y1="-2.36497" x2="2.98039"
+                                                    y2="-2.16789" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg class="h-5 w-6" viewBox="0 0 17 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 1.65448L8 7.68368L16 13.7129V1.65448Z" fill="url(#paint0_linear_73_1206)"
+                                      stroke="url(#paint1_linear_73_1206)" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M9 1.65448L1 7.68368L9 13.7129V1.65448Z" fill="url(#paint2_linear_73_1206)"
+                                      stroke="url(#paint3_linear_73_1206)" stroke-width="2" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_73_1206" x1="12" y1="-4.37472" x2="23.11"
+                                                    y2="2.99605" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_73_1206" x1="12" y1="-4.37472" x2="23.11"
+                                                    y2="2.99605" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_73_1206" x1="5" y1="-4.37472" x2="16.11"
+                                                    y2="2.99605" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint3_linear_73_1206" x1="5" y1="-4.37472" x2="16.11"
+                                                    y2="2.99605" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="rounded-full shadow-2xl shadow-[#FF7E3A] ">
+                            <!--Play button-->
+                            <svg class="h-16 w-16 fill-[#FF7E3A]" viewBox="0 0 56 56" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M-7.62939e-05 28.0162C-7.62939e-05 12.5615 12.5675 0 27.9999 0C43.4324 0 55.9999 12.5615 55.9999 28.0162C55.9999 43.4385 43.4324 56 27.9999 56C12.5675 56 -7.62939e-05 43.4385 -7.62939e-05 28.0162ZM38.2702 30.85C38.5675 30.5528 38.9459 30.0936 39.027 29.9855C39.4594 29.4182 39.6756 28.7159 39.6756 28.0162C39.6756 27.2301 39.4324 26.5007 38.9729 25.9064C38.9353 25.8688 38.8615 25.7885 38.7654 25.6839C38.5857 25.4882 38.3276 25.2074 38.081 24.9609C35.8648 22.5837 30.081 18.6937 27.054 17.5051C26.5946 17.3187 25.4324 16.9108 24.8108 16.8837C24.2162 16.8837 23.6486 17.0188 23.1081 17.289C22.4324 17.6671 21.8918 18.2615 21.5946 18.9638C21.4054 19.4501 21.1081 20.9088 21.1081 20.9358C20.8108 22.5297 20.6486 25.123 20.6486 27.9865C20.6486 30.7176 20.8108 33.2002 21.054 34.821C21.0607 34.8277 21.0839 34.9436 21.1201 35.1237C21.2299 35.6712 21.4586 36.8118 21.7027 37.2793C22.2973 38.4139 23.4594 39.1163 24.7027 39.1163H24.8108C25.6216 39.0892 27.3243 38.3869 27.3243 38.3599C30.1891 37.1712 35.8378 33.4703 38.1081 31.0121L38.2702 30.85Z"
+                                      fill="url(#paint0_linear_86_1889)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_86_1889" x1="27.9999" y1="-28" x2="-28.0001"
+                                                    y2="28" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg class="h-5 w-6" viewBox="0 0 17 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.65448L9 7.68368L1 13.7129V1.65448Z" fill="url(#paint0_linear_73_1201)"
+                                      stroke="url(#paint1_linear_73_1201)" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M8 1.65448L16 7.68368L8 13.7129V1.65448Z" fill="url(#paint2_linear_73_1201)"
+                                      stroke="url(#paint3_linear_73_1201)" stroke-width="2" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_73_1201" x1="5" y1="-4.37472" x2="-6.10995"
+                                                    y2="2.99605" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_73_1201" x1="5" y1="-4.37472" x2="-6.10995"
+                                                    y2="2.99605" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_73_1201" x1="12" y1="-4.37472" x2="0.890049"
+                                                    y2="2.99605" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint3_linear_73_1201" x1="12" y1="-4.37472" x2="0.890049"
+                                                    y2="2.99605" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg class="h-5 w-6" viewBox="0 0 10 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.65448L9 7.68368L1 13.7129V1.65448Z" fill="url(#paint0_linear_73_1216)"
+                                      stroke="url(#paint1_linear_73_1216)" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M9 2.65936V12.708" stroke="url(#paint2_linear_73_1216)" stroke-width="2"
+                                      stroke-linecap="round"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_73_1216" x1="5" y1="-4.37472" x2="-6.10995"
+                                                    y2="2.99605" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_73_1216" x1="5" y1="-4.37472" x2="-6.10995"
+                                                    y2="2.99605" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                    <linearGradient id="paint2_linear_73_1216" x1="9" y1="-2.36497" x2="7.01961"
+                                                    y2="-2.16789" gradientUnits="userSpaceOnUse">
+                                        <stop offset="1" stop-color="#FF9A45"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </section>
         </div>
     </section>
