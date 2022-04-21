@@ -1,0 +1,25 @@
+@import "https://fonts.googleapis.com/css?family=Poppins";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    html {
+        @apply font-sans min-h-full h-full;
+    }
+
+    body {
+        @apply min-h-full h-full;
+    }
+
+    /* width */
+    .songs-list::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Handle */
+    .songs-list::-webkit-scrollbar-thumb {
+        background: #e0e0e0;
+        border-radius: 10px;
+    }
+}
